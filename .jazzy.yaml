@@ -1,8 +1,8 @@
-module: MyLibrary
+module: SwiftUISineWaveShape
 author: CypherPoet
 author_url: https://github.com/CypherPoet
 copyright: Copyright 2021 CypherPoet
-github_url: https://github.com/CypherPoet/MyLibrary
+github_url: https://github.com/CypherPoet/SwiftUISineWaveShape
 theme: fullwidth
 swift_build_tool: spm
 clean: true

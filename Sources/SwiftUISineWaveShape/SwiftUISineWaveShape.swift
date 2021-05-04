@@ -1,3 +1,3 @@
-struct MyLibrary {
+struct SwiftUISineWaveShape {
     var text = "Hello, World!"
 }
