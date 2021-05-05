@@ -1,0 +1,567 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F3814C7C26414F61002C2EF0 /* ThemeColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3814C7B26414F61002C2EF0 /* ThemeColors.swift */; };
+		F3814C7D26414F61002C2EF0 /* ThemeColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3814C7B26414F61002C2EF0 /* ThemeColors.swift */; };
+		F3814C7F26414F69002C2EF0 /* ImageAssets.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3814C7E26414F69002C2EF0 /* ImageAssets.swift */; };
+		F3814C8026414F69002C2EF0 /* ImageAssets.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3814C7E26414F69002C2EF0 /* ImageAssets.swift */; };
+		F3814C8326414FA3002C2EF0 /* SwiftUIStarterKit in Frameworks */ = {isa = PBXBuildFile; productRef = F3814C8226414FA3002C2EF0 /* SwiftUIStarterKit */; };
+		F3814C8626414FCC002C2EF0 /* SwiftUIShapeDemoUtils in Frameworks */ = {isa = PBXBuildFile; productRef = F3814C8526414FCC002C2EF0 /* SwiftUIShapeDemoUtils */; };
+		F3814C89264150D3002C2EF0 /* SwiftUISineWaveShape in Frameworks */ = {isa = PBXBuildFile; productRef = F3814C88264150D3002C2EF0 /* SwiftUISineWaveShape */; };
+		F3814C8B26415C06002C2EF0 /* OverlappingWavesExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3814C8A26415C06002C2EF0 /* OverlappingWavesExampleView.swift */; };
+		F3814C8C26415C06002C2EF0 /* OverlappingWavesExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3814C8A26415C06002C2EF0 /* OverlappingWavesExampleView.swift */; };
+		F3E3C5862641495C00E9141E /* SineWaveShapeDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E3C5732641495800E9141E /* SineWaveShapeDemoApp.swift */; };
+		F3E3C5872641495C00E9141E /* SineWaveShapeDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E3C5732641495800E9141E /* SineWaveShapeDemoApp.swift */; };
+		F3E3C58A2641495C00E9141E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3E3C5752641495C00E9141E /* Assets.xcassets */; };
+		F3E3C58B2641495C00E9141E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3E3C5752641495C00E9141E /* Assets.xcassets */; };
+		F3E3C59926414DAB00E9141E /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E3C59726414DAB00E9141E /* RootView.swift */; };
+		F3E3C59A26414DAB00E9141E /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E3C59726414DAB00E9141E /* RootView.swift */; };
+		F3E3C59B26414DAB00E9141E /* SliderControlledExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E3C59826414DAB00E9141E /* SliderControlledExampleView.swift */; };
+		F3E3C59C26414DAB00E9141E /* SliderControlledExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E3C59826414DAB00E9141E /* SliderControlledExampleView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F3814C7B26414F61002C2EF0 /* ThemeColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeColors.swift; sourceTree = "<group>"; };
+		F3814C7E26414F69002C2EF0 /* ImageAssets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageAssets.swift; sourceTree = "<group>"; };
+		F3814C8A26415C06002C2EF0 /* OverlappingWavesExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlappingWavesExampleView.swift; sourceTree = "<group>"; };
+		F3E3C5732641495800E9141E /* SineWaveShapeDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SineWaveShapeDemoApp.swift; sourceTree = "<group>"; };
+		F3E3C5752641495C00E9141E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F3E3C57A2641495C00E9141E /* SineWaveShapeDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SineWaveShapeDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3E3C57D2641495C00E9141E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3E3C5822641495C00E9141E /* SineWaveShapeDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SineWaveShapeDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3E3C5842641495C00E9141E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3E3C5852641495C00E9141E /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		F3E3C59726414DAB00E9141E /* RootView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		F3E3C59826414DAB00E9141E /* SliderControlledExampleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliderControlledExampleView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F3E3C5772641495C00E9141E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3814C8326414FA3002C2EF0 /* SwiftUIStarterKit in Frameworks */,
+				F3814C89264150D3002C2EF0 /* SwiftUISineWaveShape in Frameworks */,
+				F3814C8626414FCC002C2EF0 /* SwiftUIShapeDemoUtils in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3E3C57F2641495C00E9141E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F3814C7926414F50002C2EF0 /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				F3814C7B26414F61002C2EF0 /* ThemeColors.swift */,
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
+		F3814C7A26414F53002C2EF0 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				F3814C7E26414F69002C2EF0 /* ImageAssets.swift */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		F3814C87264150D3002C2EF0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F3E3C56D2641495800E9141E = {
+			isa = PBXGroup;
+			children = (
+				F3E3C5722641495800E9141E /* Shared */,
+				F3E3C57C2641495C00E9141E /* iOS */,
+				F3E3C5832641495C00E9141E /* macOS */,
+				F3E3C57B2641495C00E9141E /* Products */,
+				F3814C87264150D3002C2EF0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F3E3C5722641495800E9141E /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				F3E3C5732641495800E9141E /* SineWaveShapeDemoApp.swift */,
+				F3E3C59526414D5C00E9141E /* Resources */,
+				F3E3C59426414D5700E9141E /* Scene Views */,
+				F3E3C59626414D6100E9141E /* Styling */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		F3E3C57B2641495C00E9141E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F3E3C57A2641495C00E9141E /* SineWaveShapeDemo.app */,
+				F3E3C5822641495C00E9141E /* SineWaveShapeDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F3E3C57C2641495C00E9141E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				F3E3C57D2641495C00E9141E /* Info.plist */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		F3E3C5832641495C00E9141E /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				F3E3C5842641495C00E9141E /* Info.plist */,
+				F3E3C5852641495C00E9141E /* macOS.entitlements */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		F3E3C59426414D5700E9141E /* Scene Views */ = {
+			isa = PBXGroup;
+			children = (
+				F3E3C59726414DAB00E9141E /* RootView.swift */,
+				F3814C8A26415C06002C2EF0 /* OverlappingWavesExampleView.swift */,
+				F3E3C59826414DAB00E9141E /* SliderControlledExampleView.swift */,
+			);
+			path = "Scene Views";
+			sourceTree = "<group>";
+		};
+		F3E3C59526414D5C00E9141E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F3E3C5752641495C00E9141E /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F3E3C59626414D6100E9141E /* Styling */ = {
+			isa = PBXGroup;
+			children = (
+				F3814C7926414F50002C2EF0 /* Colors */,
+				F3814C7A26414F53002C2EF0 /* Images */,
+			);
+			path = Styling;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F3E3C5792641495C00E9141E /* SineWaveShapeDemo (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3E3C58E2641495C00E9141E /* Build configuration list for PBXNativeTarget "SineWaveShapeDemo (iOS)" */;
+			buildPhases = (
+				F3E3C5762641495C00E9141E /* Sources */,
+				F3E3C5772641495C00E9141E /* Frameworks */,
+				F3E3C5782641495C00E9141E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SineWaveShapeDemo (iOS)";
+			packageProductDependencies = (
+				F3814C8226414FA3002C2EF0 /* SwiftUIStarterKit */,
+				F3814C8526414FCC002C2EF0 /* SwiftUIShapeDemoUtils */,
+				F3814C88264150D3002C2EF0 /* SwiftUISineWaveShape */,
+			);
+			productName = "SineWaveShapeDemo (iOS)";
+			productReference = F3E3C57A2641495C00E9141E /* SineWaveShapeDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F3E3C5812641495C00E9141E /* SineWaveShapeDemo (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3E3C5912641495C00E9141E /* Build configuration list for PBXNativeTarget "SineWaveShapeDemo (macOS)" */;
+			buildPhases = (
+				F3E3C57E2641495C00E9141E /* Sources */,
+				F3E3C57F2641495C00E9141E /* Frameworks */,
+				F3E3C5802641495C00E9141E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SineWaveShapeDemo (macOS)";
+			productName = "SineWaveShapeDemo (macOS)";
+			productReference = F3E3C5822641495C00E9141E /* SineWaveShapeDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F3E3C56E2641495800E9141E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					F3E3C5792641495C00E9141E = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					F3E3C5812641495C00E9141E = {
+						CreatedOnToolsVersion = 12.5;
+					};
+				};
+			};
+			buildConfigurationList = F3E3C5712641495800E9141E /* Build configuration list for PBXProject "SineWaveShapeDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F3E3C56D2641495800E9141E;
+			packageReferences = (
+				F3814C8126414FA3002C2EF0 /* XCRemoteSwiftPackageReference "SwiftUIStarterKit" */,
+				F3814C8426414FCC002C2EF0 /* XCRemoteSwiftPackageReference "SwiftUIShapeDemoUtils" */,
+			);
+			productRefGroup = F3E3C57B2641495C00E9141E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F3E3C5792641495C00E9141E /* SineWaveShapeDemo (iOS) */,
+				F3E3C5812641495C00E9141E /* SineWaveShapeDemo (macOS) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F3E3C5782641495C00E9141E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3E3C58A2641495C00E9141E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3E3C5802641495C00E9141E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3E3C58B2641495C00E9141E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F3E3C5762641495C00E9141E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3814C8B26415C06002C2EF0 /* OverlappingWavesExampleView.swift in Sources */,
+				F3814C7F26414F69002C2EF0 /* ImageAssets.swift in Sources */,
+				F3E3C59B26414DAB00E9141E /* SliderControlledExampleView.swift in Sources */,
+				F3814C7C26414F61002C2EF0 /* ThemeColors.swift in Sources */,
+				F3E3C59926414DAB00E9141E /* RootView.swift in Sources */,
+				F3E3C5862641495C00E9141E /* SineWaveShapeDemoApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3E3C57E2641495C00E9141E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3814C8C26415C06002C2EF0 /* OverlappingWavesExampleView.swift in Sources */,
+				F3814C8026414F69002C2EF0 /* ImageAssets.swift in Sources */,
+				F3E3C59C26414DAB00E9141E /* SliderControlledExampleView.swift in Sources */,
+				F3814C7D26414F61002C2EF0 /* ThemeColors.swift in Sources */,
+				F3E3C59A26414DAB00E9141E /* RootView.swift in Sources */,
+				F3E3C5872641495C00E9141E /* SineWaveShapeDemoApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F3E3C58C2641495C00E9141E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F3E3C58D2641495C00E9141E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		F3E3C58F2641495C00E9141E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QRXXH2RKAG;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.cypherpoet.SineWaveShapeDemo;
+				PRODUCT_NAME = SineWaveShapeDemo;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F3E3C5902641495C00E9141E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QRXXH2RKAG;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.cypherpoet.SineWaveShapeDemo;
+				PRODUCT_NAME = SineWaveShapeDemo;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F3E3C5922641495C00E9141E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = QRXXH2RKAG;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.cypherpoet.SineWaveShapeDemo;
+				PRODUCT_NAME = SineWaveShapeDemo;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F3E3C5932641495C00E9141E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = QRXXH2RKAG;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.cypherpoet.SineWaveShapeDemo;
+				PRODUCT_NAME = SineWaveShapeDemo;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F3E3C5712641495800E9141E /* Build configuration list for PBXProject "SineWaveShapeDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3E3C58C2641495C00E9141E /* Debug */,
+				F3E3C58D2641495C00E9141E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3E3C58E2641495C00E9141E /* Build configuration list for PBXNativeTarget "SineWaveShapeDemo (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3E3C58F2641495C00E9141E /* Debug */,
+				F3E3C5902641495C00E9141E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3E3C5912641495C00E9141E /* Build configuration list for PBXNativeTarget "SineWaveShapeDemo (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3E3C5922641495C00E9141E /* Debug */,
+				F3E3C5932641495C00E9141E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F3814C8126414FA3002C2EF0 /* XCRemoteSwiftPackageReference "SwiftUIStarterKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/CypherPoet/SwiftUIStarterKit";
+			requirement = {
+				kind = exactVersion;
+				version = 0.0.53;
+			};
+		};
+		F3814C8426414FCC002C2EF0 /* XCRemoteSwiftPackageReference "SwiftUIShapeDemoUtils" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/CypherPoet/SwiftUIShapeDemoUtils";
+			requirement = {
+				kind = exactVersion;
+				version = 0.0.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F3814C8226414FA3002C2EF0 /* SwiftUIStarterKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F3814C8126414FA3002C2EF0 /* XCRemoteSwiftPackageReference "SwiftUIStarterKit" */;
+			productName = SwiftUIStarterKit;
+		};
+		F3814C8526414FCC002C2EF0 /* SwiftUIShapeDemoUtils */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F3814C8426414FCC002C2EF0 /* XCRemoteSwiftPackageReference "SwiftUIShapeDemoUtils" */;
+			productName = SwiftUIShapeDemoUtils;
+		};
+		F3814C88264150D3002C2EF0 /* SwiftUISineWaveShape */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SwiftUISineWaveShape;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = F3E3C56E2641495800E9141E /* Project object */;
+}
