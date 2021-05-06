@@ -49,6 +49,7 @@ extension SliderControlledExampleView: View {
             ScrollView {
                 VStack(spacing: 32.0) {
                     headerSection
+                    
                     wavesSection
                     
                     Spacer()
@@ -61,6 +62,7 @@ extension SliderControlledExampleView: View {
         .readingFrameSize { newSize in
             screenHeight = newSize.height
         }
+        .navigationBarHidden(true)
     }
 }
 
@@ -105,19 +107,19 @@ private extension SliderControlledExampleView {
     
     var wavesSection: some View {
         VStack {
-            AutoWavingView(strokeColor: ThemeColors.secondary2)
+            AutoWavingView(strokeColor: ThemeColors.primary)
                 .frame(height: screenHeight * 0.05)
             
             ZStack {
                 ForEach(0..<5) { waveIndex in
                     SineWave(
-                        phase: .radians(phase.radians + Double(waveIndex)),
+                        phase: .radians(phase.radians + Double(waveIndex) * 10.0),
                         amplitudeRatio: amplitudeSliderProgress,
                         frequency: frequency
                     )
                     .stroke(ThemeColors.accent, lineWidth: 12)
                     .opacity(Double(waveIndex) / 5.0)
-                    .offset(x: 0.0, y: CGFloat(waveIndex) * 10.0)
+//                    .offset(x: 0.0, y: CGFloat(waveIndex) * 10.0)
                     .animation(amplitudeAnimation, value: amplitudeSliderProgress)
                     .animation(amplitudeAnimation, value: frequency)
                     .animation(phaseAnimation, value: phase)
@@ -125,7 +127,7 @@ private extension SliderControlledExampleView {
             }
             .frame(height: screenHeight * 0.25)
             
-            AutoWavingView(strokeColor: ThemeColors.secondary2)
+            AutoWavingView(strokeColor: ThemeColors.primary)
                 .frame(height: screenHeight * 0.05)
         }
     }
@@ -220,8 +222,13 @@ private extension SliderControlledExampleView {
 struct SineWaveDemoView_Previews: PreviewProvider {
     
     static var previews: some View {
-        SliderControlledExampleView()
-            .accentColor(ThemeColors.accent)
+        Group {
+            SliderControlledExampleView()
+            
+            SliderControlledExampleView()
+                .preferredColorScheme(.dark)
+        }
+        .accentColor(ThemeColors.accent)
     }
 }
 #endif

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F3780EF9264438CB00ED1667 /* SineWaveModulationDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3780EF8264438CA00ED1667 /* SineWaveModulationDemoView.swift */; };
+		F3780EFA264438CB00ED1667 /* SineWaveModulationDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3780EF8264438CA00ED1667 /* SineWaveModulationDemoView.swift */; };
 		F3814C7C26414F61002C2EF0 /* ThemeColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3814C7B26414F61002C2EF0 /* ThemeColors.swift */; };
 		F3814C7D26414F61002C2EF0 /* ThemeColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3814C7B26414F61002C2EF0 /* ThemeColors.swift */; };
 		F3814C7F26414F69002C2EF0 /* ImageAssets.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3814C7E26414F69002C2EF0 /* ImageAssets.swift */; };
@@ -27,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F3780EF8264438CA00ED1667 /* SineWaveModulationDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SineWaveModulationDemoView.swift; sourceTree = "<group>"; };
 		F3814C7B26414F61002C2EF0 /* ThemeColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeColors.swift; sourceTree = "<group>"; };
 		F3814C7E26414F69002C2EF0 /* ImageAssets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageAssets.swift; sourceTree = "<group>"; };
 		F3814C8A26415C06002C2EF0 /* OverlappingWavesExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlappingWavesExampleView.swift; sourceTree = "<group>"; };
@@ -137,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				F3E3C59726414DAB00E9141E /* RootView.swift */,
+				F3780EF8264438CA00ED1667 /* SineWaveModulationDemoView.swift */,
 				F3814C8A26415C06002C2EF0 /* OverlappingWavesExampleView.swift */,
 				F3E3C59826414DAB00E9141E /* SliderControlledExampleView.swift */,
 			);
@@ -270,6 +274,7 @@
 				F3814C7F26414F69002C2EF0 /* ImageAssets.swift in Sources */,
 				F3E3C59B26414DAB00E9141E /* SliderControlledExampleView.swift in Sources */,
 				F3814C7C26414F61002C2EF0 /* ThemeColors.swift in Sources */,
+				F3780EF9264438CB00ED1667 /* SineWaveModulationDemoView.swift in Sources */,
 				F3E3C59926414DAB00E9141E /* RootView.swift in Sources */,
 				F3E3C5862641495C00E9141E /* SineWaveShapeDemoApp.swift in Sources */,
 			);
@@ -283,6 +288,7 @@
 				F3814C8026414F69002C2EF0 /* ImageAssets.swift in Sources */,
 				F3E3C59C26414DAB00E9141E /* SliderControlledExampleView.swift in Sources */,
 				F3814C7D26414F61002C2EF0 /* ThemeColors.swift in Sources */,
+				F3780EFA264438CB00ED1667 /* SineWaveModulationDemoView.swift in Sources */,
 				F3E3C59A26414DAB00E9141E /* RootView.swift in Sources */,
 				F3E3C5872641495C00E9141E /* SineWaveShapeDemoApp.swift in Sources */,
 			);

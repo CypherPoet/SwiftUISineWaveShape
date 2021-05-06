@@ -1,10 +1,10 @@
-# SwiftUISineWaveShape
+# SineWave
 
 <!-- Header Logo -->
 
-<div align="center">
+<!-- <div align="center">
    <img width="600px" src="./Extras/banner-logo.png" alt="Banner Logo">
-</div>
+</div> -->
 
 
 <!-- Badges -->
@@ -33,6 +33,13 @@ _An animatable SwiftUI Shape for drawing a sine wave line -- with additional sup
 <p />
 
 
+<div align="center">
+   <img width="300px" src="./Extras/modulation.gif" alt="Demo Recording">
+   <img width="300px" src="./Extras/overlapping-waves.gif" alt="Demo Recording">
+   <img width="300px" src="./Extras/slider-parameters.gif" alt="Demo Recording">
+</div>
+
+
 <!-- ## Features
 
 - ✅ Feature 1
@@ -54,7 +61,10 @@ You can add `SwiftUISineWaveShape` as a package dependency in your `Package.swif
 let package = Package(
     //...
     dependencies: [
-        .package(url: "https://github.com/CypherPoet/SwiftUISineWaveShape", .exact("0.0.1")),
+        .package(
+          url: "https://github.com/CypherPoet/SwiftUISineWaveShape",
+          .upToNextMinor(from: "0.1.0")
+        ),
     ],
     //...
 )
@@ -80,6 +90,19 @@ Then simply `import SwiftUISineWaveShape` wherever you’d like to use it.
 
 ## Usage
 
+Importing `SwiftUISineWaveShape` will expose the `SineWave` type.
+
+```swift
+  SineWave(
+      phase: Angle(radians: .pi),
+      amplitudeRatio: 0.4,
+      frequency: 10,
+      amplitudeModulation: .center
+  )
+  .stroke(Color.pink, lineWidth: 2)
+```
+
+`SineWave` documentation can be found [here](https://cypherpoet.github.io/SwiftUISineWaveShape/), and this project's [example app](https://github.com/CypherPoet/SwiftUISineWaveShape/tree/main/Examples/SineWaveShapeDemo) contains a demonstration of more ways to use it.
 
 
 ## Contributing

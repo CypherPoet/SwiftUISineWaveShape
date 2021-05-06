@@ -21,7 +21,7 @@ extension RootView: View {
                 )
                 NavigationLink(
                     "Custom Amplitude Modulation",
-                    destination: EmptyView()
+                    destination: SineWaveModulationDemoView()
                 )
             }
             .navigationBarTitle(Text("Sine Wave Lines"))

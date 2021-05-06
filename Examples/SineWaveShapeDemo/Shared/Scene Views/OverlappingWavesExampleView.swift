@@ -79,7 +79,7 @@ extension OverlappingWavesExampleView: View {
                 }
             }
         }
-        .navigationBarHidden(true)
+//        .navigationBarHidden(true)
     }
 }
 
