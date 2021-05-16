@@ -22,7 +22,10 @@ public struct SineWave {
     /// Frequency, measured in Hertz, is meant to define the number of wave repetitions
     /// per second. In the context of a single shape, we can translate that to repetitions
     /// within the rectangle bounds.
-    @Clamped(to: 1.0 ..< Hertz.infinity)
+    @Clamped(
+        above: 0.0,
+        andBelow: .infinity
+    )
     public var frequency: Hertz = 1.0
     
     
