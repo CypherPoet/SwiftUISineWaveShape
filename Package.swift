@@ -28,7 +28,7 @@ let package = Package(
         ),
         .package(
             url: "https://github.com/CypherPoet/ClampedPropertyWrapper",
-            .upToNextMinor(from: "0.1.0")
+            .upToNextMinor(from: "0.2.0")
         ),
         .package(
             url: "https://github.com/CypherPoet/SwiftUIGeometryUtils",

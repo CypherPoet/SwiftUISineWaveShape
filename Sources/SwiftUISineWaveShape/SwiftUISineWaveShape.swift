@@ -22,7 +22,7 @@ public struct SineWave {
     /// Frequency, measured in Hertz, is meant to define the number of wave repetitions
     /// per second. In the context of a single shape, we can translate that to repetitions
     /// within the rectangle bounds.
-    @Clamped(within: 1.0...Hertz.infinity)
+    @Clamped(to: 1.0 ..< Hertz.infinity)
     public var frequency: Hertz = 1.0
     
     
@@ -46,7 +46,7 @@ public struct SineWave {
 
 // MARK: - Shape
 extension SineWave: Shape {
-
+    
     public func path(in rect: CGRect) -> Path {
         let rectWavelength = self.wavelength(in: rect)
         let rectHeight = rect.height
@@ -59,9 +59,9 @@ extension SineWave: Shape {
             withWavelength: rectWavelength,
             andHeight: rectHeight
         )
-                                   
+        
         var path = Path()
-
+        
         path.move(to: startPoint)
         
         for xPosition in stride(
@@ -78,7 +78,7 @@ extension SineWave: Shape {
                 )
             )
         }
-
+        
         return path
     }
 }
@@ -86,7 +86,7 @@ extension SineWave: Shape {
 
 // MARK: - AnimatableData
 extension SineWave {
-
+    
     public var animatableData: AnimatablePair<
         Double,
         AnimatablePair<CGFloat, CGFloat>
@@ -141,7 +141,7 @@ private extension SineWave {
         }
     }
     
-  
+    
     func wavePoint(
         at xPosition: CGFloat,
         inRect rect: CGRect,
@@ -157,12 +157,12 @@ private extension SineWave {
         let viewBoundsHeightShift: CGFloat = midHeight
         
         let modulatedAmplitudeWeight = self.amplitudeModulationFactor(for: xPosition, in: rect)
-
+        
         let unModulatedYPosition = (sine * maxAmplitudeHeight)
         let modulatedYPosition = unModulatedYPosition * modulatedAmplitudeWeight
         
         let finalYPosition = modulatedYPosition + viewBoundsHeightShift
-
+        
         return CGPoint(x: xPosition, y: finalYPosition)
     }
 }
@@ -198,11 +198,10 @@ struct SineWave_Previews: PreviewProvider {
             SineWave()
                 .fill(Color.accentColor)
             
-            SineWave(
-            )
-            .stroke(Color.pink, lineWidth: 10)
-            .frame(width: 300, height: 200, alignment: .center)
-            .background(Color.yellow)
+            SineWave()
+                .stroke(Color.pink, lineWidth: 10)
+                .frame(width: 300, height: 200, alignment: .center)
+                .background(Color.yellow)
             
             SineWave(
                 phase: .radians(.pi / 6),
@@ -238,7 +237,7 @@ struct SineWave_Previews: PreviewProvider {
             
             SineWave(
                 amplitudeRatio: 0.75
-//                frequency: 1
+                //                frequency: 1
             )
             .stroke(Color.pink, lineWidth: 10)
             .frame(width: 629)
